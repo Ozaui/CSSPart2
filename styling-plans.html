@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="buttons.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0px;
+      }
+      section {
+        text-align: center;
+        margin: auto;
+      }
+      #section-tite {
+        text-align: center;
+      }
+      .plan {
+        float: left;
+        text-align: center;
+        width: 33.3%;
+      }
+      .plan__features {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .plan__features li {
+        margin: 6px 0px;
+      }
+      .inner-plan {
+        background-color: rgb(157, 185, 238);
+        padding: 25px;
+        margin: 7px;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .container {
+        margin: 0 auto;
+        width: 1000px;
+      }
+      .plan__badge {
+        background-color: #fff;
+        color: #fc997c;
+        padding: 8px;
+        border-radius: 5px;
+      }
+      .recommended_plan {
+        color: #fff;
+        background: #396eb0 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="clearfix">
+      <h3 class="seciton-title">Become a Premium Member</h3>
+
+      <div class="container">
+        <div class="plan">
+          <div class="inner-plan">
+            <h3>Recommended</h3>
+            <h4>$9.99/mount</h4>
+            <ul class="plan__features">
+              <li>Lorem.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <button class="btn btn-primary">Choose Plan</button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan recommended_plan">
+            <h2 class="plan__badge">Recommended</h2>
+            <h4>$9.99/mount</h4>
+            <ul class="plan__features">
+              <li>Lorem.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <button class="btn btn-primary">Choose Plan</button>
+          </div>
+        </div>
+
+        <div class="plan">
+          <div class="inner-plan">
+            <h3>Premium</h3>
+            <h4>$19.99/mount</h4>
+            <ul class="plan__features">
+              <li>Lorem.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum dolor.</li>
+              <li>Lorem, ipsum.</li>
+            </ul>
+            <button class="btn btn-primary">Choose Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
